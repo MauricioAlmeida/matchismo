@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224861721FF3204D0098DA11 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 224861711FF3204D0098DA11 /* CardMatchingGame.m */; };
 		226AA06E1FF1891C001777AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226AA06D1FF1891C001777AE /* AppDelegate.m */; };
 		226AA0711FF1891C001777AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226AA0701FF1891C001777AE /* ViewController.m */; };
 		226AA0741FF1891C001777AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226AA0721FF1891C001777AE /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		224861701FF3204D0098DA11 /* CardMatchingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		224861711FF3204D0098DA11 /* CardMatchingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 		226AA0691FF1891C001777AE /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AA06C1FF1891C001777AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		226AA06D1FF1891C001777AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 		226AA09E1FF1C3AA001777AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				224861701FF3204D0098DA11 /* CardMatchingGame.h */,
+				224861711FF3204D0098DA11 /* CardMatchingGame.m */,
 				226AA0A21FF1C627001777AE /* Card.h */,
 				226AA0A31FF1C627001777AE /* Card.m */,
 				226AA0A51FF1C63E001777AE /* Deck.h */,
@@ -297,6 +302,7 @@
 				226AA0A71FF1C63E001777AE /* Deck.m in Sources */,
 				226AA0711FF1891C001777AE /* ViewController.m in Sources */,
 				226AA07C1FF1891C001777AE /* main.m in Sources */,
+				224861721FF3204D0098DA11 /* CardMatchingGame.m in Sources */,
 				226AA0AD1FF1C6F1001777AE /* PlayingCardDeck.m in Sources */,
 				226AA06E1FF1891C001777AE /* AppDelegate.m in Sources */,
 				226AA0A41FF1C627001777AE /* Card.m in Sources */,
