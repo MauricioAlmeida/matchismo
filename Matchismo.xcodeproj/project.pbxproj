@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		224861721FF3204D0098DA11 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 224861711FF3204D0098DA11 /* CardMatchingGame.m */; };
+		224861751FF90EED0098DA11 /* BTSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 224861741FF90EED0098DA11 /* BTSCard.m */; };
+		224861781FF90F0C0098DA11 /* BTSDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 224861771FF90F0C0098DA11 /* BTSDeck.m */; };
+		2248617B1FF90F420098DA11 /* BTSMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2248617A1FF90F420098DA11 /* BTSMatchingGame.m */; };
+		2248617E1FF91F2C0098DA11 /* BtsGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2248617D1FF91F2C0098DA11 /* BtsGameViewController.m */; };
 		226AA06E1FF1891C001777AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226AA06D1FF1891C001777AE /* AppDelegate.m */; };
 		226AA0711FF1891C001777AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226AA0701FF1891C001777AE /* ViewController.m */; };
 		226AA0741FF1891C001777AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226AA0721FF1891C001777AE /* Main.storyboard */; };
@@ -42,6 +46,14 @@
 /* Begin PBXFileReference section */
 		224861701FF3204D0098DA11 /* CardMatchingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
 		224861711FF3204D0098DA11 /* CardMatchingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
+		224861731FF90EED0098DA11 /* BTSCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSCard.h; sourceTree = "<group>"; };
+		224861741FF90EED0098DA11 /* BTSCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSCard.m; sourceTree = "<group>"; };
+		224861761FF90F0C0098DA11 /* BTSDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSDeck.h; sourceTree = "<group>"; };
+		224861771FF90F0C0098DA11 /* BTSDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSDeck.m; sourceTree = "<group>"; };
+		224861791FF90F420098DA11 /* BTSMatchingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTSMatchingGame.h; sourceTree = "<group>"; };
+		2248617A1FF90F420098DA11 /* BTSMatchingGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTSMatchingGame.m; sourceTree = "<group>"; };
+		2248617C1FF91F2C0098DA11 /* BtsGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BtsGameViewController.h; sourceTree = "<group>"; };
+		2248617D1FF91F2C0098DA11 /* BtsGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BtsGameViewController.m; sourceTree = "<group>"; };
 		226AA0691FF1891C001777AE /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226AA06C1FF1891C001777AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		226AA06D1FF1891C001777AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +132,8 @@
 				226AA06D1FF1891C001777AE /* AppDelegate.m */,
 				226AA06F1FF1891C001777AE /* ViewController.h */,
 				226AA0701FF1891C001777AE /* ViewController.m */,
+				2248617C1FF91F2C0098DA11 /* BtsGameViewController.h */,
+				2248617D1FF91F2C0098DA11 /* BtsGameViewController.m */,
 				226AA0721FF1891C001777AE /* Main.storyboard */,
 				226AA0751FF1891C001777AE /* Assets.xcassets */,
 				226AA0771FF1891C001777AE /* LaunchScreen.storyboard */,
@@ -151,6 +165,10 @@
 		226AA09E1FF1C3AA001777AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				224861731FF90EED0098DA11 /* BTSCard.h */,
+				224861741FF90EED0098DA11 /* BTSCard.m */,
+				224861761FF90F0C0098DA11 /* BTSDeck.h */,
+				224861771FF90F0C0098DA11 /* BTSDeck.m */,
 				224861701FF3204D0098DA11 /* CardMatchingGame.h */,
 				224861711FF3204D0098DA11 /* CardMatchingGame.m */,
 				226AA0A21FF1C627001777AE /* Card.h */,
@@ -161,6 +179,8 @@
 				226AA0A91FF1C6CB001777AE /* PlayingCard.m */,
 				226AA0AB1FF1C6F1001777AE /* PlayingCardDeck.h */,
 				226AA0AC1FF1C6F1001777AE /* PlayingCardDeck.m */,
+				224861791FF90F420098DA11 /* BTSMatchingGame.h */,
+				2248617A1FF90F420098DA11 /* BTSMatchingGame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,13 +318,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224861781FF90F0C0098DA11 /* BTSDeck.m in Sources */,
 				226AA0AA1FF1C6CB001777AE /* PlayingCard.m in Sources */,
 				226AA0A71FF1C63E001777AE /* Deck.m in Sources */,
 				226AA0711FF1891C001777AE /* ViewController.m in Sources */,
+				2248617E1FF91F2C0098DA11 /* BtsGameViewController.m in Sources */,
 				226AA07C1FF1891C001777AE /* main.m in Sources */,
 				224861721FF3204D0098DA11 /* CardMatchingGame.m in Sources */,
+				2248617B1FF90F420098DA11 /* BTSMatchingGame.m in Sources */,
 				226AA0AD1FF1C6F1001777AE /* PlayingCardDeck.m in Sources */,
 				226AA06E1FF1891C001777AE /* AppDelegate.m in Sources */,
+				224861751FF90EED0098DA11 /* BTSCard.m in Sources */,
 				226AA0A41FF1C627001777AE /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
