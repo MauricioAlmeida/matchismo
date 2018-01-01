@@ -16,6 +16,7 @@
 
 @property (strong, nonatomic) Deck *deck;
 @property (strong, nonatomic) BTSMatchingGame *game;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @end
 
 @implementation BtsGameViewController
@@ -40,19 +41,19 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
-    int cardIndex = [self.cardButtons indexOfObject:sender];
+    NSUInteger cardIndex = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:cardIndex];
     [self updateUI];
 }
 
 - (void)updateUI {
     for (UIButton *cardButton in self.cardButtons) {
-        int cardIndex = [self.cardButtons indexOfObject:cardButton];
+        NSUInteger cardIndex = [self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardIndex];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
     }
-    //self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", (int)self.game.score];
 }
 
 - (UIImage *)backgroundImageForCard:(Card *)card

@@ -366,12 +366,20 @@
                                     <action selector="touchCardButton:" destination="YlH-7s-xbH" eventType="touchUpInside" id="sto-vE-SH8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xC-6a-CGF">
+                                <rect key="frame" x="16" y="477" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lC3-87-v5y"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="BTS" id="Drx-LR-Thl"/>
                     <connections>
+                        <outlet property="scoreLabel" destination="2xC-6a-CGF" id="fnb-vb-vv7"/>
                         <outletCollection property="cardButtons" destination="Fsh-KP-Urj" id="FQr-Oj-nlv"/>
                         <outletCollection property="cardButtons" destination="HkZ-Ow-ueT" id="5LB-gI-TeP"/>
                         <outletCollection property="cardButtons" destination="Bnh-VD-31v" id="qCf-r5-Jov"/>
@@ -392,7 +400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9py-Ti-fdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="420" y="710"/>
+            <point key="canvasLocation" x="420" y="709.85915492957747"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PzP-9P-bF6">
@@ -400,6 +408,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ABF-d1-KvM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cbP-0m-Meh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

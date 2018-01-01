@@ -23,7 +23,7 @@
     
     for (BTSCard *card in otherCards) {
         if ([self.imageName isEqualToString:card.imageName]) {
-            result = 1;
+            result = 3;
             break;
         }
     }
